@@ -1,0 +1,184 @@
+body {
+    background: linear-gradient(to bottom, #6C757D, #D0D0D0);
+    color:black;
+    background-size: cover;
+}
+.header {
+    text-align: center;
+}
+
+.sheader {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.table {
+    width: 100%;
+    font-size: 30px;
+}
+
+.input {
+    width: 650px;
+    height: 25px;
+    font-size: 25px;
+}
+
+.btnnext {
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.captable {
+    text-align: center;
+    width: 100%;
+}
+
+.nowidth {
+    height: 15px;
+    width: 33px;
+}
+
+.nhmwidth {
+    height: 15px;
+    width: 200px;
+}
+
+.rthwidth {
+    height: 15px;
+    width: 140px;
+}
+
+.agewidth {
+    height: 15px;
+    width: 35px;
+}
+
+.sexwidth {
+    height: 15px;
+    width: 25px;
+}
+
+.bdwidth {
+    height: 15px;
+    width: 90px;
+}
+
+.cswidth {
+    height: 15px;
+    width: 40px;
+}
+
+.occwidth {
+    height: 15px;
+    width: 120px;
+}
+
+.oswidth {
+    height: 15px;
+    width: 84px;
+}
+
+.relwidth {
+    height: 15px;
+    width: 90px;
+}
+
+.footwidth {
+    
+    width: 100%;
+}
+
+.legend {
+    width: 100%;
+    font-size: 18px;
+}
+
+.radios {
+    margin-left: 67px;
+    font-size: 20px;
+    margin-top: -23px;
+}
+
+.radtable {
+    width: 60%;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 16px;
+}
+
+.asize {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.A4 {
+    width: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 16px;
+}
+
+#mfptable {
+    width: 100%;
+}
+
+#mfptable input[type="text"] {
+    width: 90%;
+}
+
+#istagtable {
+    width: 100%;
+}
+
+#istagtable input[type="text"]{
+    width: 80%;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #111;
+  }
+
+#scrollToBottomBtn {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  display: none; 
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  top: 20px; 
+  right: 20px;
+  display: none; 
+  margin-left: 10rem;
+}
+
+#scrollToTopBtn.active,
+#scrollToBottomBtn.active {
+  display: block;
+}

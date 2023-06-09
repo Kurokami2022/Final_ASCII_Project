@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Community Diagnostic Health Survey Tool</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<form>
+    <nav>
+        <ul class="navbar">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="index.html">Community Diagnostic Health Survey Tool</a></li>
+          <li><a href="view.html">View Database</a></li>
+        </ul>
+      </nav>
+    <div class="header">
+        <h1>DIVINE WORD COLLEGE OF LAOAG</h1>
+        <h3 class="sheader">ASCII</h3>
+        <hr>
+        <h2>COMMUNITY DIAGNOSTIC HEALTH SURVEY TOOL</h2>
+        <hr>
+    </div>
+    <br>
+    <div class="info">
+        <table class="table">
+            <input type="button" id="scrollToBottomBtn" onclick="scrollToBottom()" value="Scroll Down">
+            <tr>
+                <td>
+                    <label for="">Head of the Family:</label>
+                    <input type="text" required="true" class="input" id="head" required="true">
+                </td>
+                <td>
+                    <label for="">No. of Family Member:</label>
+                    <input type="text" class="input" id="numfam">
+                </td>
+            <tr>
+                <td>
+                    <label for="">Complete Address:</label>
+                    <input type="text" class="input" id="address">
+                </td>
+                <td>
+                    <label for="">Length of Residency:</label>
+                    <input type="text" class="input" id="length">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Ethnic Group:</label>
+                    <input type="text" class="input" id="ethnic">
+                </td>
+                <td>
+                    <label for="">Type of Family:</label>
+                    <input type="text" class="input" id="famtype">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Primary Dialect:</label>
+                    <input type="text" class="input" id="primdia">
+                </td>
+            </tr>
+            </tr>
+        </table>
+        <br>
+        <hr>
+    </div>
+    <h2>I. PHYSICAL/GEOGRAPHICAL DATA</h2>
+    <hr>
+    </div>
+    <br>
+    <div class="info">
+        <table class="table">
+            <tr>
+                <td>
+                    <label for="">Land Area:</label>
+                    <input type="text" class="input" id="lanare">
+                </td>
+            <tr>
+                <td>
+                    <br>
+                    <label for="">Boundaries of the Barangay:</label><br>
+                    
+                    <label for="">North:</label><br>
+                    <input type="text" class="input" id="north"><br>
+
+                    <label for="">West:</label><br>
+                    <input type="text" class="input" id="west"><br>
+                </td>
+                <td><br><br>
+                    <label for="">East:</label><br>
+                    <input type="text" class="input" id="east"><br>
+
+                    <label for="">South:</label><br>
+                    <input type="text" class="input" id="south"><br>
+                </td>
+            <tr>
+                <td>
+                    <br>
+                    <label for="">Names of Sitios composing the Barangay:</label><br>
+                    <input type="text" class="input" id="nscb">
+                    <br><br>
+                    <label for="">Distance of Sitios from the landmark (Barangay Hall):</label><br>
+                    <input type="text" class="input" id="dslbh">
+                    <br><br>
+                    <label for="">Distance of Barangay from the Town proper:</label><br>
+                    <input type="text" class="input" id="dbtp">
+                    <br><br>
+                    <label for="">Distance of the Barangay from the National Highway:</label><br>
+                    <input type="text" class="input" id="dbnh">
+                    <br><br>
+                    <label for="">Facilities (BHS, school, church, brgy hall, store, basketball, multipurpose hall, and others):</label><br>
+                    <input type="text" class="input" id="faci">
+                    <br><br>
+                    <label for="">Transportation:</label><br>
+                    <input type="text" class="input" id="trans">
+                    <br><br>
+                    <label for="">Natural resources (river, mountains, agricultural lands and others):</label><br>
+                    <input type="text" class="input" id="natres">
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <br>
+        <hr>
+        <h2>II. COMMUNITY AS PEOPLE</h2>
+        <hr>
+        <table border = "1" class="captable" id="captable">
+            <h5>Family Structure, Characteristics and Dynamic/Relation Patterns</h5>
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name of Household Member</th>
+                <th>Relation to the Head</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Birthdate<br>(mm-dd-yy)</th>
+                <th>Civil<br>Status</th>
+                <th>Occupation</th>
+                <th>Occupational<br>Status</th>
+                <th>Highest<br>Educational<br>Attainment</th>
+                <th>Religion</th>
+                <th>Add/Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text" class="nowidth" id="No1" value="1" disabled></td>
+                <td><input type="text" class="nhmwidth" id="nhm1"></td>
+                <td><input type="text" class="rthwidth" id="rth1"></td>
+                <td><input type="text" class="agewidth" id="age1"></td>
+                <td><input type="text" class="sexwidth" id="sex1"></td>
+                <td><input type="text" class="bdwidth" id="bday1"></td>
+                <td><input type="text" class="cswidth" id="cs1"></td>
+                <td><input type="text" class="occwidth" id="occ1"></td>
+                <td><input type="text" class="oswidth" id="os1"></td>
+                <td><input type="text" class="heawidth" id="hea1"></td>
+                <td><input type="text" class="relwidth" id="rel1"></td>
+                <td>
+                    <input type="button" value="Add" onclick="addnew()">
+                    <input type='button' value='Delete' onclick='deleteit()'>
+                </td>
+            </tr>
+            </tbody>
+            <table border="1" class="legend">
+                <tr>
+                    <td>
+                        <p><b>LEGEND:</b><br>
+                            <b>Sex: </b> 
+                            M-Male; F-Female <br>
+                            <b>Civil Status: </b>
+                            S-Single; M-Married; W-Widowed; CL-CommonLaw; Sep-Separated <br>
+                            <b>Religion: </b>
+                            C-Catholic; P-Protestant; SA-7th Day Adventist; INC-Iglesia ni Cristo; JW-Jehova's Witness <br>
+                            <b>Highest Educ. Attainment: </b>
+                            EG-Elem Grad; EU-Elem Undergrad; HG-Highschool Grad; HU-Highschool Undergrad; CU-College Undergrad; V-Vocational; CG-College Grad <br>
+                            <b>Occupational Status: </b>
+                            E-Employed; U-Unemployed; SE-Self Employed
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </table>
+    </div>
+
+    <div>
+        <br>
+        <hr>
+        <h2>III. COMMUNITY AS A SOCIAL SYSTEM</h2>
+        <hr>
+        <h2>A. Socio-economic Aspects</h2>
+        <h4 class="asize">A.1. Combined monthly family income</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="A.1" value="1000 and below">1,000 and below<br>                  
+                        <input type="radio" name="A.1" value="1,001 - 5,000">1,001 - 5,000 <br>                      
+                        <input type="radio" name="A.1" value="5,001 - 10,000">5,001 - 10,000 <br>
+                        <input type="radio" name="A.1" value="10,001 - 15,000">10,001 - 15,000
+                        
+                    </td>
+                    <td>
+                        <input type="radio" name="A.1" value="15,001 - 20,000">15,001 - 20,000 <br>
+                        <input type="radio" name="A.1" value="20,001 - 25,000">20,001 - 25,000 <br>
+                        <input type="radio" name="A.1" value="25,001 - 30,000">25,001 - 30,000 <br>
+                        <input type="radio" name="A.1" value="30,000 and above">30,000 and above
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.2. Other Source of Income (Indicate the profit earned then add the monthly family income)</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="A.2" value="Yes">YES <br>                  
+                        
+                    </td>
+                    <td>
+                        <input type="radio" name="A.2" value="No">NO <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">If Yes, what?</label><br>
+                        <input type="radio" name="A.2.1" value="sari-sari store">sari-sari store<br>                  
+                        <input type="radio" name="A.2.1" value="craft making">craft making<br>                  
+                        <input type="radio" name="A.2.1" value="others">other; specify:
+                        <input type="text" value="" id="others">                  
+                    </td>
+                    <td>
+                        <input type="radio" name="A.2.1" value="poultry raising">poultry raising<br>                  
+                        <input type="radio" name="A.2.1" value="livestock raising">livestock raising<br>                  
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <h4 class="asize">A.3. Monthly Expenditure</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="A.3" value="1,000 and below">1,000 and below<br>                  
+                        <input type="radio" name="A.3" value="1,001 - 5,000">1,001 - 5,000 <br>                      
+                        <input type="radio" name="A.3" value="5,001 - 10,000">5,001 - 10,000 <br>
+                        <input type="radio" name="A.3" value="10,001 - 15,000">10,001 - 15,000
+                        
+                    </td>
+                    <td>
+                        <input type="radio" name="A.3" value="15,001 - 20,000">15,001 - 20,000 <br>
+                        <input type="radio" name="A.3" value="20,001 - 25,000">20,001 - 25,000 <br>
+                        <input type="radio" name="A.3" value="25,001 - 30,000">25,001 - 30,000 <br>
+                        <input type="radio" name="A.3" value="30,000 and above">30,000 and above
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.4. Priority Expenditure (Rank it from highest to lowest using the numerical values)</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="text" class="A4" id="food">  food <br>
+                        <input type="text" class="A4" id="health">  health <br>
+                        <input type="text" class="A4" id="houserent">  house rental <br>
+                        <input type="text" class="A4" id="education">  education <br>
+                        <input type="text" class="A4" id="electricbill">  electric bill <br>
+                        <input type="text" class="A4" id="clothing">  clothing <br>
+                        <input type="text" class="A4" id="waterbill">  water bill <br>
+                        others, specify <input type="text" id="a4others"><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.5. Resources allocated for health care</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="A.5" value="Yes">YES <br>                  
+                        
+                    </td>
+                    <td>
+                        <input type="radio" name="A.5" value="No">NO <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">If Yes, from where?</label><br>
+                        <input type="radio" name="A.5.1" value="Health Insurance">Health Insurance<br>                  
+                        <input type="radio" name="A.5.1" value="Philhealth">Philhealth<br>                  
+                        <input type="radio" name="A.5.1" value="others">others, specify:
+                        <input type="text" id="a5others">                  
+                    </td>
+                    <td>
+                        <input type="radio" name="A.5.1" value="SSS, GSIS">SSS, GSIS<br>                  
+                        <input type="radio" name="A.5.1" value="savings">savings<br>                  
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <hr>
+    <h2>B. Political/Leadership Aspect</h2>
+        <h4 class="asize">B.1. Recognized leaders in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="B.1" value="Barangay Officials,">Barangay Officials<br>                  
+                        <input type="checkbox" name="B.1" value="Religious leaders,">Religious leaders<br>                      
+                        <input type="checkbox" name="B.1" value="elders,">elders
+                    </td>
+                    <td>
+                        <input type="checkbox" name="B.1" value="NGO,">NGO <br>
+                        <input type="checkbox" name="B.1" value="others">others, specify:
+                        <input type="text" id="b1others"><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.2. Community program</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="B.2" value="peace and order,">peace and order<br>                  
+                        <input type="checkbox" name="B.2" value="sportfest,">sportfest<br>                      
+                        <input type="checkbox" name="B.2" value="fumigation,">fumigation
+                    </td>
+                    <td>
+                        <input type="checkbox" name="B.2" value="oplan dalus,">oplan dalus<br>
+                        <input type="checkbox" name="B.2" value="curfew,">curfew<br>
+                        <input type="checkbox" name="B.2" value="others">others, specify:
+                        <input type="text" id="b2others"><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.3. Predominant organizations in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="B.3" value="Brgy council,">Brgy council<br>                  
+                        <input type="checkbox" name="B.3" value="Couples for Christ,">Couples for Christ<br>                      
+                        <input type="checkbox" name="B.3" value="SK,">SK
+                    </td>
+                    <td>
+                        <input type="checkbox" name="B.3" value="Senior Citizens Club,">Senior Citizens Club<br>
+                        <input type="checkbox" name="B.3" value="others">others, specify:
+                        <input type="text" id="b3others"><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.4. Tradition celebrated, observed in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="B.4" value="Fiesta,">Fiesta<br>                  
+                        <input type="checkbox" name="B.4" value="Thanksgiving,">Thanksgiving<br>                      
+                    </td>
+                    <td>
+                        <input type="checkbox" name="B.4" value="Holy week,">Holy week<br>
+                        <input type="checkbox" name="B.4" value="others">others, specify:
+                        <input type="text" id="b4others"><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <h2>C. Environmental Aspect</h2>
+        <h4 class="asize">C.1. House ownership</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.1" value="owned">owned<br>                  
+                        <input type="radio" name="C.1" value="rented">rented<br>                      
+                        <input type="radio" name="C.1" value="rent-free">rent-free <br>
+                        <input type="radio" name="C.1" value="lease to own">lease to own
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.2. Land ownership</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.2" value="owned">owned<br>                  
+                        <input type="radio" name="C.2" value="rented">rented<br>                      
+                        <input type="radio" name="C.2" value="rent-free">rent-free <br>
+                        <input type="radio" name="C.2" value="lease to own">lease to own
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.3. Type of Construction materials used</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.3" value="Light">Light<br>                  
+                        <input type="radio" name="C.3" value="Mixed">Mixed<br>                      
+                        <input type="radio" name="C.3" value="Strong">Strong <br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.4. Ventilation</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.4" value="Well Ventilated">Well Ventilated<br>                  
+                        <input type="radio" name="C.4" value="Fair">Fair<br>                      
+                        <input type="radio" name="C.4" value="Poorly Ventilate">Poorly Ventilated <br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.5. Lighting Facilities</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.5" value="Electricity">Electricity<br>                  
+                        <input type="radio" name="C.5" value="Kerosene">Kerosene<br>                      
+                        <input type="radio" name="C.5" value="Candles">Candles  <br>
+                        <input type="radio" name="C.5" value="Others">Others
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.6. Source of Drinking Water</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.6" value="Commercially prepared">Commercially prepared<br>                  
+                        <input type="radio" name="C.6" value="Streams, Rivers or Spring">Streams, Rivers or Spring<br>                      
+                        <input type="radio" name="C.6" value="Deep Wel">Deep Well
+                    </td>
+                    <td>
+                        <input type="radio" name="C.6" value="Rain Water">Rain Water<br>                  
+                        <input type="radio" name="C.6" value="others">others:
+                        <input type="text" id="c6others">                     
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.7. Storage of Drinking Water</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="C.7" value="Jar,">Jar<br>                  
+                        <input type="checkbox" name="C.7" value="Plastic,">Plastic<br>                      
+                        <input type="checkbox" name="C.7" value="Bottles,">Bottles <br>
+                        <input type="checkbox" name="C.7" value="Water Dispenser,">Water Dispenser
+                    </td>
+                    <td>
+                        <input type="checkbox" name="C.7" value="Water Tank,">Water Tank<br>                  
+                        <input type="checkbox" name="C.7" value="Drum,">Drum<br>                  
+                        <input type="checkbox" name="C.7" value="others,">others, specify:
+                        <input type="text" id="c7others">                     
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Level: </label><br>
+                        <input type="radio" name="C.7.1" value="1">1 <br>
+                        <input type="radio" name="C.7.1" value="2">2 <br>
+                        <input type="radio" name="C.7.1" value="3">3
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.8. Drainage Facility</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.8" value="Open-Drainage">Open-Drainage<br>                  
+                        <input type="radio" name="C.8" value="Blind Drainage">Blind Drainage<br>                      
+                        <input type="radio" name="C.8" value="None">None <br>
+                        <label for="">Condition: </label><br>
+                        <input type="radio" name="C.8.1" value="Free Flowing">Free Flowing <br>
+                        <input type="radio" name="C.8.1" value="Stagnant">Stagnant
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h4 class="asize">C.9. Types of Garbage Disposal</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <label for="">Waste Garbage Segregation: </label>
+                        <input type="radio" name="C.9" value="Yes">Yes                 
+                        <input type="radio" name="C.9" value="No">No<br>
+                        <label for="">Container Used in Garbage: </label><br>                      
+                        <input type="radio" name="C.9.1" value="Garbage Bag">Garbage Bag <br> 
+                        <input type="radio" name="C.9.1" value="Waste Basket">Waste Basket  <br>
+                        <input type="radio" name="C.9.1" value="Sac">Sac <br>
+                        <label for="">Container: </label><br>
+                        <input type="radio" name="C.9.2" value="Covered">Covered <br>
+                        <input type="radio" name="C.9.2" value="Open">Open <br>
+                        <input type="radio" name="C.9.2" value="None">None <br>
+                        <label for="">Method of Disposal:</label><br>
+                        <input type="checkbox" name="C.9.3" value="Hog Feeding,">Hog Feeding <br>
+                        <input type="checkbox" name="C.9.3" value="Open Dumping,">Open Dumping <br>
+                        <input type="checkbox" name="C.9.3" value="Burial in Pit,">Burial in Pit <br>
+                        <input type="checkbox" name="C.9.3" value="Composting,">Composting <br>
+                        <input type="checkbox" name="C.9.3" value="Open Burning,">Open Burning <br>
+                        <input type="checkbox" name="C.9.3" value="Garbage Collection,">Garbage Collection <br>
+                        <input type="checkbox" name="C.9.3" value="others">others, specify:
+                        <input type="text" id="c9others">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.10. Toilet Facilities</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="C.10" value="None">None<br>                  
+                        <input type="checkbox" name="C.10" value="Overhung Latrine,">Overhung Latrine<br>                      
+                        <input type="checkbox" name="C.10" value="Open Pit Privy,">Open Pit Privy <br>
+                        <input type="checkbox" name="C.10" value="Closed Pit Privy,">Closed Pit Privy <br>
+                        <input type="checkbox" name="C.10" value="Bored-Hole Latrine,">Bored-Hole Latrine <br>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="C.10" value="Pail System,">Pail System<br>                  
+                        <input type="checkbox" name="C.10" value="Antipolo Type,">Antipolo Type <br>
+                        <input type="checkbox" name="C.10" value="Water-Sealed Latrine,">Water-Sealed Latrine <br>
+                        <input type="checkbox" name="C.10" value="Flush Type,">Flush Type<br>                  
+                        <input type="checkbox" name="C.10" value="others">others, specify:
+                        <input type="text" id="c10others">                     
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Level:</label><br>
+                        <input type="radio" name="C.10.1" value="1">1 <br>
+                        <input type="radio" name="C.10.1" value="2">2 <br>
+                        <input type="radio" name="C.10.1" value="3">3 <br>
+
+                        <label for="">Ownership:</label><br>
+                        <input type="radio" name="C.10.2" value="Private">Private <br>
+                        <input type="radio" name="C.10.2" value="Public">Public <br>
+                        <input type="radio" name="C.10.2" value="Shared">Shared <br>
+                    </td>
+                </tr>
+            </table>
+            <label for="">Distance from the House to Toilet Facility:</label>
+            <input type="text" id="c10distance"><br>
+            <label for="">Sanitary Condition: </label><br>
+            <input type="radio" name="C.10.3" value="Good">Good <br>
+            <input type="radio" name="C.10.3" value="Fair">Fair <br>
+            <input type="radio" name="C.10.3" value="Poor">Poor <br>
+        </div>
+
+        <h4 class="asize">C.11. Domestic Animals</h4>
+        <div class="radios">
+            <table border="1" id="datable">
+                <thead>
+                <tr>
+                    <th>Kind</th>
+                    <th>Number</th>
+                    <th>Where Kept</th>
+                    <th>With Vaccination</th>
+                    <th>Without Vaccination</th>
+                    <th>Add/Delete</th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td><input type="text" id="kind1"></td>
+                    <td><input type="text" id="number1"></td>
+                    <td><input type="text" id="where1"></td>
+                    <td><input type="text" id="vaccine1"></td>
+                    <td><input type="text" id="novaccine1"></td>
+                    <td>
+                        <input type="button" value="Add" onclick="addnew1()">
+                        <input type='button' value='Delete' onclick='deleteit1()'>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <h4 class="asize">C.12. Presence of Breeding Sites and Vectors of Diseases</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="radio" name="C.12" value="specify">Yes, specify:
+                        <input type="text" id="c12specify"><br>              
+                        <input type="radio" name="C.12" value="None">None                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.13. Presence of Vectors and Rodents</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="C.13" value="Flies,">Flies<br>       
+                        <input type="checkbox" name="C.13" value="Roaches,">Roaches<br>       
+                        <input type="checkbox" name="C.13" value="Termites (anay),">Termites (anay)                  
+                    </td>
+                    <td>
+                        <input type="checkbox" name="C.13" value="Mosquitoes,">Mosquitoes<br>       
+                        <input type="checkbox" name="C.13" value="Rats,">Rats<br>       
+                        <input type="checkbox" name="C.13" value="others">others, specify:
+                        <input type="text" id="c13others">                 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Ways in Controlling Vectors</label><br>
+                        <input type="checkbox" name="C.13.1" value="Fumigation,">Fumigation<br>       
+                        <input type="checkbox" name="C.13.1" value="Kulambo,">Kulambo<br>       
+                        <input type="checkbox" name="C.13.1" value="Mouse Trap,">Mouse Trap<br>       
+                        <input type="checkbox" name="C.13.1" value="Fly Traps,">Fly Traps<br>       
+                    </td>
+                    <td>
+                        <input type="checkbox" name="C.13.1" value="Insecticides,">Insecticides<br>       
+                        <input type="checkbox" name="C.13.1" value="None">None<br>       
+                        <input type="checkbox" name="C.13.1" value="others">others, specify:
+                        <input type="text" id="c131others">       
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <br>
+            <hr>
+            <h2>IV. HEALTH ASPECTS</h2>
+            <hr>
+            <h2 class="asize">A. Community Health Programs</h2><br>
+            <div class="radios">
+                <table class="radtable" id="chptable">
+                    <tr>
+                      <td>
+                        <br>
+                        <label for="free-consultation">Free Consultation</label><br>
+                        <label for="immunization">Immunization</label><br>
+                        <label for="family-planning">Family Planning</label><br>
+                        <label for="pre-natal-check-up">Pre-natal Check Up</label><br>
+                        <label for="well-baby-clinic">Well-baby Clinic</label><br>
+                        <label for="others">Others, specify: </label>
+                        <input type="text" name="others" id="Aothers">
+                      </td>
+                      <td style="text-align: center;">
+                        <label for="aware">Aware</label><br>
+                        <input type="checkbox" name="aware" id="free-consultation-aware"><br>
+                        <input type="checkbox" name="aware" id="immunization-aware"><br>
+                        <input type="checkbox" name="aware" id="family-planning-aware"><br>
+                        <input type="checkbox" name="aware" id="pre-natal-check-up-aware"><br>
+                        <input type="checkbox" name="aware" id="well-baby-clinic-aware"><br>
+                        <input type="checkbox" name="aware" id="others-aware">
+                      </td>
+                      <td style="text-align: center;">
+                        <label for="utilizes">Utilizes</label><br>
+                        <input type="checkbox" name="utilizes" id="free-consultation-utilizes"><br>
+                        <input type="checkbox" name="utilizes" id="immunization-utilizes"><br>
+                        <input type="checkbox" name="utilizes" id="family-planning-utilizes"><br>
+                        <input type="checkbox" name="utilizes" id="pre-natal-check-up-utilizes"><br>
+                        <input type="checkbox" name="utilizes" id="well-baby-clinic-utilizes"><br>
+                        <input type="checkbox" name="utilizes" id="others-utilizes">
+                      </td>
+                    </tr>
+                  </table>
+            </div>
+            <h2 class="asize">B. Family Health Practices</h2><br>
+            <div class="radios">
+                <table  class="radtable">
+                    <tr>
+                        <td>
+                            <label for="" style="font-weight: bold;">Health Practices</label><br>             
+                            <label for="">a. Use of Hygienic Products</label><br>                
+                            <label for="">b. Sleep 6-8 hrs/day</label><br>                
+                            <label for="">c. Brushes Teeth</label><br>                
+                            <label for="">d. Cuts Nails</label><br>                
+                            <label for="">e. Cleans Ears</label><br>                
+                            <label for="">f. Changes Clothes</label><br>                
+                            <label for="">g. Eats Balanced Diet</label><br>                
+                            <label for="">h. Smoking</label><br>                
+                            <label for="">i. Regular Excercise</label><br>                
+                            <label for="">j. Use Prohibited Drugs</label><br>                
+                            <label for="">k. Dental Check Up</label><br>                
+                            <label for="">l. Drinking Alcohol Beverages</label><br>                
+                            <label for="">m. Medical Check-up</label><br>                
+                            <label for="">n. Recreational Relaxation Activities</label><br>                
+                            <label for="">o. Go to Church Regularly</label>        
+                        </td>
+                        <td style="text-align: center;">
+                            <label for="" style="font-weight: bold;">Practiced</label><br>
+                            <input type="radio" name="Ba" value="Practiced"><br>
+                            <input type="radio" name="Bb" value="Practiced"><br>
+                            <input type="radio" name="Bc" value="Practiced"><br>
+                            <input type="radio" name="Bd" value="Practiced"><br>
+                            <input type="radio" name="Be" value="Practiced"><br>
+                            <input type="radio" name="Bf" value="Practiced"><br>
+                            <input type="radio" name="Bg" value="Practiced"><br>
+                            <input type="radio" name="Bh" value="Practiced"><br>
+                            <input type="radio" name="Bi" value="Practiced"><br>
+                            <input type="radio" name="Bj" value="Practiced"><br>
+                            <input type="radio" name="Bk" value="Practiced"><br>
+                            <input type="radio" name="Bl" value="Practiced"><br>
+                            <input type="radio" name="Bm" value="Practiced"><br>
+                            <input type="radio" name="Bn" value="Practiced"><br>
+                            <input type="radio" name="Bo" value="Practiced">
+                        </td>
+                        <td style="text-align: center;">
+                            <label for="" style="font-weight: bold;">Not Practiced</label><br>
+                            <input type="radio" name="Ba" value="Not Practiced"><br>
+                            <input type="radio" name="Bb" value="Not Practiced"><br>
+                            <input type="radio" name="Bc" value="Not Practiced"><br>
+                            <input type="radio" name="Bd" value="Not Practiced"><br>
+                            <input type="radio" name="Be" value="Not Practiced"><br>
+                            <input type="radio" name="Bf" value="Not Practiced"><br>
+                            <input type="radio" name="Bg" value="Not Practiced"><br>
+                            <input type="radio" name="Bh" value="Not Practiced"><br>
+                            <input type="radio" name="Bi" value="Not Practiced"><br>
+                            <input type="radio" name="Bj" value="Not Practiced"><br>
+                            <input type="radio" name="Bk" value="Not Practiced"><br>
+                            <input type="radio" name="Bl" value="Not Practiced"><br>
+                            <input type="radio" name="Bm" value="Not Practiced"><br>
+                            <input type="radio" name="Bn" value="Not Practiced"><br>
+                            <input type="radio" name="Bo" value="Not Practiced">
+                        </td>
+                        <td style="text-align: center;">
+                            <label for="" style="font-weight: bold;">Frequency/Remarks</label><br>
+                            <input type="text" id="baremark"><br>
+                            <input type="text" id="bbremark"><br>
+                            <input type="text" id="bcremark"><br>
+                            <input type="text" id="bdremark"><br>
+                            <input type="text" id="beremark"><br>
+                            <input type="text" id="bfremark"><br>
+                            <input type="text" id="bgremark"><br>
+                            <input type="text" id="bhremark"><br>
+                            <input type="text" id="biremark"><br>
+                            <input type="text" id="bjremark"><br>
+                            <input type="text" id="bkremark"><br>
+                            <input type="text" id="blremark"><br>
+                            <input type="text" id="bmremark"><br>
+                            <input type="text" id="bnremark"><br>
+                            <input type="text" id="boremark">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="asize">C. First Person Consulted in Times of Illness</h2><br>
+            <div class="radios">
+                <table  class="radtable">
+                    <tr>
+                        <td>
+                            <input type="radio" name="C" value="Doctor">Doctor<br>
+                            <input type="radio" name="C" value="Midwife">Midwife<br>
+                            <input type="radio" name="C" value="Nurse">Nurse<br>
+                            <input type="radio" name="C" value="Relatives">Relatives<br>
+                            <input type="radio" name="C" value="Family">Family<br>           
+                        </td>
+                        <td>
+                            <input type="radio" name="C" value="BHW">BHW<br>
+                            <input type="radio" name="C" value="Albularyo">Albularyo<br>
+                            <input type="radio" name="C" value="Hilot">Hilot<br>
+                            <input type="radio" name="C" value="Faith Healer">Faith Healer<br>
+                            <input type="radio" name="C" value="others">Others, specify:
+                            <input type="text" id="cothers">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="asize">D. Medications Taken During Illness</h2><br>
+            <div class="radios">
+                <table  class="radtable">
+                    <tr>
+                        <td>
+                            <input type="radio" name="D" value="Prescribed">Prescribed<br>
+                            <input type="radio" name="D" value="Herbal">Herbal           
+                        </td>
+                        <td>
+                            <input type="radio" name="D" value="Over the Counter Drugs">Over the Counter Drugs<br>
+                            <input type="radio" name="D" value="others">Others, specify:
+                            <input type="text" id="dothers">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h4 class="asize">E. Method of Family Planning</h4>
+            <div class="radios">
+            <table border="1" id="mfptable">
+                <thead>
+                <tr>
+                    <th>Name<br>(15 y/o - 49 y/o)</th>
+                    <th>Age</th>
+                    <th>Acceptor</th>
+                    <th>Method<br>
+                    Withdrawal; rythm; cervical <br> mucus Method; 
+                    basal body temp; <br> condoms; IUD; Pills; <br> depo; 
+                    Vasectomy; BTL</th>
+                    <th>Types<br>N-Natural; <br> A-Artificial; <br> P-Permanent</th>
+                    <th>Add/Delete</th>
+                </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td><input type="text" id="name1"></td>
+                    <td><input type="text" id="Age1"></td>
+                    <td>
+                        <input type="radio" name="E1"  value="Yes">Yes &nbsp;
+                        <input type="radio" name="E1" value="No">No
+                    </td>
+                    <td><input type="text"  id="method1"></td>
+                    <td><input type="text"  id="types1"></td>
+                    <td>
+                        <input type="button" value="Add" onclick="addnew2()">
+                        <input type='button' value='Delete' onclick='deleteit2()'>
+                    </td>
+                </tr>
+            </tbody>
+                <table border="1" class="legend">
+                    <tr>
+                        <td>
+                            <p>Natural FP: Rhythm; Withdrawal; Cervical Mucus Method; Basal Body Temperature <br>
+                                Artificial FP: Condoms; Pills; IUD <br>
+                                Permanent FP: BTL; Vasectomy
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </table>
+        </div>
+            <h4 class="asize">F. Immunization Status Target Age Group (0-12mos)</h4>
+            <div class="radios">
+            <table border="1" id="istagtable">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>BCG</th>
+                    <th>Hepa B</th>
+                    <th>Penta</th>
+                    <th>PCV</th>
+                    <th>OPV</th>
+                    <th>IPV</th>
+                    <th>MMR</th>
+                    <th>Remarks</th>
+                    <th>Add/Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="name11"></td>
+                    <td><input type="text" id="age11"></td>
+                    <td><input type="text" id="bcg11"></td>
+                    <td><input type="text" id="hepab11"></td>
+                    <td>
+                        <input type="checkbox" name="penta1" value="1,">1 
+                        <input type="checkbox" name="penta1" value="2,">2 
+                        <input type="checkbox" name="penta1" value="3,">3
+                    </td>
+                    <td>
+                        <input type="checkbox" name="pcv1" value="1,">1 
+                        <input type="checkbox" name="pcv1" value="2,">2 
+                        <input type="checkbox" name="pcv1" value="3,">3
+                    </td>
+                    <td>
+                        <input type="checkbox" name="opv1" value="1,">1 
+                        <input type="checkbox" name="opv1" value="2,">2 
+                        <input type="checkbox" name="opv1" value="3,">3
+                    </td>
+                    <td><input type="text" id="ipv1"></td>
+                    <td>
+                        <input type="checkbox" name="mmr1" value="1,">1 
+                        <input type="checkbox" name="mmr1" value="2,">2 
+                    </td>
+                    <td>
+                        <input type="checkbox" name="remarks1" value="Inc,">Inc 
+                        <input type="checkbox" name="remarks1" value="CIC,">CIC
+                        <input type="checkbox" name="remarks1" value="FIC,">FIC
+                    </td>
+                    
+                    <td>
+                        <input type="button" value="Add" onclick="addnew3()">
+                        <input type='button' value='Delete' onclick='deleteit3()'>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <h4 class="asize">G. Maternal Care (Previous and Pregnancy in the Family, if any)</h4>
+        <div class="radios">
+        <table border="1" id="mctable">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>No. of Pregnancy</th>
+                <th>Age of Gestation</th>
+                <th>EDC</th>
+                <th>Prenatal Check Up</th>
+                <th>Tetanus Toxoid</th>
+                <th>Add/Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="name21"></td>
+                <td><input type="text" id="pregnancy1"></td>
+                <td><input type="text" id="gestation1"></td>
+                <td><input type="text" id="edc1"></td>
+                <td>
+                    <input type="radio" name="G1" value="Yes">Yes 
+                    <input type="radio" name="G1" value="No">No 
+                </td>
+                <td>
+                    <input type="checkbox" name="tt1" value="TT1,">TT1 
+                    <input type="checkbox" name="tt1" value="TT2,">TT2 
+                    <input type="checkbox" name="tt1" value="TT3,">TT3
+                    <input type="checkbox" name="tt1" value="TT4,">TT4
+                    <input type="checkbox" name="tt1" value="TT5,">TT5
+                </td>
+                <td>
+                    <input type="button" value="Add" onclick="addnew4()">
+                    <input type='button' value='Delete' onclick='deleteit4()'>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <h4 class="asize">H. Morbidity (w/n 1 whole year) Jan. 1 - Dec. 31</h4>
+        <div class="radios">
+        <table border="1" id="morbtable">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Type of Disease</th>
+                <th>Intervention <br>(Medication/Hospitalization)</th>
+                <th>Add/Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="name31"></td>
+                <td><input type="text" id="age31"></td>
+                <td><input type="text" id="sex31"></td>
+                <td><input type="text" id="disease31"></td>
+                <td><input type="text" id="intervention31"></td>
+                <td>
+                    <input type="button" value="Add" onclick="addnew5()">
+                    <input type='button' value='Delete' onclick='deleteit5()'>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <h4 class="asize">I. Mortality (w/n 1 whole year) Jan. 1 - Dec. 31</h4>
+        <div class="radios">
+        <table border="1" id="morttable">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Cause of Death</th>
+                <th>Add/Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="name41"></td>
+                <td><input type="text" id="age41"></td>
+                <td><input type="text" id="sex41"></td>
+                <td><input type="text" id="death41"></td>
+                <td>
+                    <input type="button" value="Add" onclick="addnew6()">
+                    <input type='button' value='Delete' onclick='deleteit6()'>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2>V. SOURCES OF INFORMATION AND COMMUNICATION</h2>
+        <hr>
+        <br>
+        <div class="radios">
+        <table>
+            <tr>
+                <td>
+                <input type="checkbox" value="Radio," name='sources'>Radio <br>
+                <input type="checkbox" value="TV," name='sources'>TV <br>
+                <input type="checkbox" value="Cellular Phone," name='sources'>Cellular Phone <br>
+                <input type="checkbox" value="Newspaper," name='sources'>Newspaper<br>
+                <input type="checkbox" value="Telephone," name='sources'>Telephone<br>
+                <input type="checkbox" value="others" name='sources'>Others, specify: 
+                <input type="text" id="vothers">
+            </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2>VI. CULTURAL PATTERNS AND BELIEFS</h2>
+        <hr>
+        <h4 class="asize">1. Common Cultural Beleifs with Regards to Marriage, Burial, Courtships, etc.</h4>
+        <div class="radios">
+        <table>
+            <tr>
+                <td>
+                    <textarea name=""  cols="30" rows="10" id="cultural"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h4 class="asize">2. Beliefs in Supernatural Beings, Herbolaryo, etc.</h4>
+        <div class="radios">
+        <table>
+            <tr>
+                <td>
+                    <textarea name=""  cols="30" rows="10" id="supernatural"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h4 class="asize">3. Beliefs in illness/disease Condition.</h4>
+        <div class="radios">
+        <table>
+            <tr>
+                <td>
+                    <textarea name=""  cols="30" rows="10" id="condition"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+        </div>
+    <div>
+        <br>
+        <input class="btnnext" id="btnsub" type="button" value="Save" onclick="btnbtn()">
+    </div>
+    <input type="button" id="scrollToTopBtn" onclick="scrollToTop()" value="Scroll Up">
+</form>
+<footer>
+    <p>©DWCL-Association of Computer and Information Innovators 2022-2023</p>
+  </footer>
+</body>
+</html>

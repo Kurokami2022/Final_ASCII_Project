@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>View Database</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav>
+        <ul class="navbar">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="index.html">Community Diagnostic Health Survey Tool</a></li>
+          <li><a href="view.html">View Database</a></li>
+        </ul>
+      </nav>
+    <label for="content-select">Select Content:</label>
+    <select id="content-select"><option value="" disabled selected>Select a database</option></select>
+    <input type="text" id="search-bar" placeholder="Search database name">
+    <br>
+
+    <form method="post" action="index.html"> 
+    <div class="header">
+        <h1>DIVINE WORD COLLEGE OF LAOAG</h1>
+        <h3 class="sheader">ASCII</h3>
+        <hr>
+        <h2>COMMUNITY DIAGNOSTIC HEALTH SURVEY TOOL</h2>
+        <hr>
+    </div>
+    <br>
+    <div class="info">
+        <table class="table">
+            <tr>
+                <td>
+                    <p id="head"></p>
+                    <p id="address"></p>
+                    <p id="ethnic"></p>
+                    <p id="primdia"></p>
+                </td>
+                <td>
+                    <p id="numfam"></p>
+                    <p id="length"></p>
+                    <p id="famtype"></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+    </div>
+    <h2>I. PHYSICAL/GEOGRAPHICAL DATA</h2>
+    <hr>
+    </div>
+    <br>
+    <div class="info">
+        <table class="table">
+            <tr>
+                <td>
+                    <p id="lanare"></p>
+                    <p id="bound"></p>
+                    <p id="north"></p>
+                    <p id="west"></p>
+                    <p id="east"></p>
+                    <p id="south"></p>
+                    <p id="nscb"></p>
+                    <p id="dslbh"></p>
+                    <p id="dbtp"></p>
+                    <p id="dbnh"></p>
+                    <p id="faci"></p>
+                    <p id="trans"></p>
+                    <p id="natres"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2>II. COMMUNITY AS PEOPLE</h2>
+        <hr>
+        <table border = "1" class="captable">
+            <h5>Family Structure, Characteristics and Dynamic/Relation Patterns</h5>
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name of Household Member</th>
+                <th>Relation to the Head</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Birthdate<br>(mm-dd-yy)</th>
+                <th>Civil<br>Status</th>
+                <th>Occupation</th>
+                <th>Occupational<br>Status</th>
+                <th>Highest<br>Educational<br>Attainment</th>
+                <th>Religion</th>
+            </tr>
+            </thead>
+            <tbody  id="captable">
+            
+            </tbody>
+            <table border="1" class="legend">
+                <tr>
+                    <td>
+                        <p><b>LEGEND:</b><br>
+                            <b>Sex: </b> 
+                            M-Male; F-Female <br>
+                            <b>Civil Status: </b>
+                            S-Single; M-Married; W-Widowed; CL-CommonLaw; Sep-Separated <br>
+                            <b>Religion: </b>
+                            C-Catholic; P-Protestant; SA-7th Day Adventist; INC-Iglesia ni Cristo; JW-Jehova's Witness <br>
+                            <b>Highest Educ. Attainment: </b>
+                            EG-Elem Grad; EU-Elem Undergrad; HG-Highschool Grad; HU-Highschool Undergrad; CU-College Undergrad; V-Vocational; CG-College Grad <br>
+                            <b>Occupational Status: </b>
+                            E-Employed; U-Unemployed; SE-Self Employed
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </table>
+    </div>
+
+    <div>
+        <br>
+        <hr>
+        <h2>III. COMMUNITY AS A SOCIAL SYSTEM</h2>
+        <hr>
+        <h2>A. Socio-economic Aspects</h2>
+        <h4 class="asize">A.1. Combined monthly family income</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="a1"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.2. Other Source of Income (Indicate the profit earned then add the monthly family income)</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="a2"></p>
+                </tr>
+            </table>
+    </div>
+    <h4 class="asize">A.3. Monthly Expenditure</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="a3"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.4. Priority Expenditure (Rank it from highest to lowest using the numerical values)</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="a4"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">A.5. Resources allocated for health care</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="a5"></p>
+                </tr>
+            </table>
+    </div>
+    <hr>
+    <h2>B. Political/Leadership Aspect</h2>
+        <h4 class="asize">B.1. Recognized leaders in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="b1"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.2. Community program</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="b2"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.3. Predominant organizations in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="b3"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">B.4. Tradition celebrated, observed in the community</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="b4"></p>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <h2>C. Environmental Aspect</h2>
+        <h4 class="asize">C.1. House ownership</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c1"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.2. Land ownership</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c2"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.3. Type of Construction materials used</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c3"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.4. Ventilation</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c4"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.5. Lighting Facilities</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c5"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.6. Source of Drinking Water</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c6"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.7. Storage of Drinking Water</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c7"></label>
+                    <label for="" id="c71"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.8. Drainage Facility</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c8"></label>
+                    <label for="" id="c81"></label>
+                </tr>
+            </table>
+        </div>
+
+        <h4 class="asize">C.9. Types of Garbage Disposal</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <td>
+                        <label for="" id="c9"></label>                    
+                        <label for="" id="c91"></label>
+                        <label for="" id="c92"></label>
+                        <label for="" id="c93"></label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.10. Toilet Facilities</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <label for="" id="c10"></label>
+                    <label for="" id="c101"></label>
+                    <label for="" id="c103"></label>
+                    <label for="" id="c102"></label>
+                    <label for="" id="c104"></label>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.11. Domestic Animals</h4>
+        <div class="radios">
+            <table border="1" style="text-align: center;">
+                <thead>
+                <tr>
+                    <th>Kind</th>
+                    <th>Number</th>
+                    <th>Where Kept</th>
+                    <th>With Vaccination</th>
+                    <th>Without Vaccination</th>
+                </tr>
+            </thead>
+                <tbody id="datable">
+            </tbody>
+            </table>
+        </div>
+        <h4 class="asize">C.12. Presence of Breeding Sites and Vectors of Diseases</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="c12"></p>
+                </tr>
+            </table>
+        </div>
+        <h4 class="asize">C.13. Presence of Vectors and Rodents</h4>
+        <div class="radios">
+            <table  class="radtable">
+                <tr>
+                    <p id="c13"></p>
+                    <p id="c131"></p>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <br>
+            <hr>
+            <h2>IV. HEALTH ASPECTS</h2>
+            <hr>
+            <h2 class="asize">A. Community Health Programs</h2><br>
+            <div class="radios">
+                <table class="radtable" border="1" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>Health Programs</th>
+                            <th>Aware</th>
+                            <th>Utilizes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="chptable">
+
+                    </tbody>
+                  </table>
+            </div>
+            <h2 class="asize">B. Family Health Practices</h2><br>
+            <div class="radios">
+                <table  class="radtable" border="1" style="text-align: center;">
+                    <tr>
+                        <th>Health Practices</th>
+                        <th>Practiced or Not Practiced</th>
+                        <th>Frequency/Remarks</th>
+                    </tr>
+                </thead>
+                <tbody id="fhptable">
+                    
+                </tbody>
+                </table>
+            </div>
+            <h2 class="asize">C. First Person Consulted in Times of Illness</h2><br>
+            <div class="radios">
+                <table  class="radtable">
+                    <tr>
+                        <p id="c"></p>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="asize">D. Medications Taken During Illness</h2><br>
+            <div class="radios">
+                <table  class="radtable">
+                    <p id="d"></p>
+                </table>
+            </div>
+            <h4 class="asize">E. Method of Family Planning</h4>
+            <div class="radios">
+            <table border="1" style="width: 70%; text-align: center;">
+                <thead>
+                <tr>
+                    <th>Name<br>(15 y/o - 49 y/o)</th>
+                    <th>Age</th>
+                    <th>Acceptor (Yes or No)</th>
+                    <th>Method<br>
+                    Withdrawal; rythm; cervical <br> mucus Method; 
+                    basal body temp; <br> condoms; IUD; Pills; <br> depo; 
+                    Vasectomy; BTL</th>
+                    <th>Types<br>N-Natural; <br> A-Artificial; <br> P-Permanent</th>
+                </tr>
+            </thead>
+                <tbody id="mfptable">
+                
+            </tbody>
+                <table border="1" class="legend" style="width: 70%;">
+                    <tr>
+                        <td>
+                            <p>Natural FP: Rhythm; Withdrawal; Cervical Mucus Method; Basal Body Temperature <br>
+                                Artificial FP: Condoms; Pills; IUD <br>
+                                Permanent FP: BTL; Vasectomy
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </table>
+        </div>
+        <h4 class="asize">F. Immunization Status Target Age Group (0-12mos)</h4>
+            <div class="radios">
+            <table border="1" style="width: 70%; text-align: center;">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>BCG</th>
+                    <th>Hepa B</th>
+                    <th>Penta</th>
+                    <th>PCV</th>
+                    <th>OPV</th>
+                    <th>IPV</th>
+                    <th>MMR</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody id="istagtable">
+                
+            </tbody>
+            </table>
+        </div>
+        <h4 class="asize">G. Maternal Care (Previous and Pregnancy in the Family, if any)</h4>
+        <div class="radios">
+        <table border="1" style="width: 70%; text-align: center;">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>No. of Pregnancy</th>
+                <th>Age of Gestation</th>
+                <th>EDC</th>
+                <th>Prenatal Check Up</th>
+                <th>Tetanus Toxoid</th>
+            </tr>
+        </thead>
+        <tbody id="mctable">
+            
+        </tbody>
+        </table>
+    </div>
+    <h4 class="asize">H. Morbidity (w/n 1 whole year) Jan. 1 - Dec. 31</h4>
+        <div class="radios">
+        <table border="1" style="width: 70%; text-align: center;">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Type of Disease</th>
+                <th>Intervention <br>(Medication/Hospitalization)</th>
+            </tr>
+        </thead>
+        <tbody id="morbtable">
+            
+        </tbody>
+        </table>
+    </div>
+    <h4 class="asize">I. Mortality (w/n 1 whole year) Jan. 1 - Dec. 31</h4>
+        <div class="radios">
+        <table border="1" style="width: 70%; text-align: center;">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Cause of Death</th>
+            </tr>
+        </thead>
+        <tbody id="morttable">
+            
+        </tbody>
+        </table>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2>V. SOURCES OF INFORMATION AND COMMUNICATION</h2>
+        <hr>
+        <br>
+        <div class="radios">
+        <table>
+            <p id="sources"></p>
+        </table>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2>VI. CULTURAL PATTERNS AND BELIEFS</h2>
+        <hr>
+        <h4 class="asize">1. Common Cultural Beleifs with Regards to Marriage, Burial, Courtships, etc.</h4>
+        <div class="radios">
+        <table>
+            <p id="cultural"></p>
+        </table>
+    </div>
+    <h4 class="asize">2. Beliefs in Supernatural Beings, Herbolaryo, etc.</h4>
+        <div class="radios">
+        <table>
+            <p id="supernatural"></p>
+            
+        </table>
+    </div>
+    <h4 class="asize">3. Beliefs in illness/disease Condition.</h4>
+        <div class="radios">
+        <table>
+            <p id="illness"></p>
+        </table>
+    </div>
+    </div>
+</form>
+<footer>
+    <p>©DWCL-Association of Computer and Information Innovators 2022-2023</p>
+  </footer>
+    <script src="view.js"></script>
+  </body>
+</html>
